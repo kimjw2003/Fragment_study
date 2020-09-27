@@ -2,12 +2,16 @@ package com.example.fragment_Study
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.project.simplecode.spDateFormat
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        timeTemp.text = spDateFormat("HH", 0)
+
 
         setFrag(0)
 
